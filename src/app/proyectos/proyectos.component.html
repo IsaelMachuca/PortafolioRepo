@@ -1,0 +1,22 @@
+<div class="grid h-screen">
+    <div class="text-white text-2xl text-start relative bottom-0 right-0 mt-10 ml-40">
+        <h1 class="text-center text-4xl font-bold " > <strong> Mis Proyectos </strong> </h1>
+        <p class="text-start m font-serif" >visualizacion de proyectos realizados</p>
+    </div>
+    <div>
+        <h2>Repositorios de {{ IsaelMachuca }} en GitHub</h2>
+        <ul>
+          <li *ngFor="let repo of repos">
+            <a [href]="repo.html_url" target="_blank">{{ repo.name }}</a>
+          </li>
+        </ul>
+      </div>
+      <div style="text-align:center">
+        <h1>
+          Bienvenido a GitHub Projects!
+        </h1>
+        <app-repo-list></app-repo-list>
+      </div>
+      
+</div>
+
